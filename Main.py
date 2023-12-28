@@ -13,8 +13,8 @@ st.set_page_config(page_title="Iris Flower Classification", page_icon="🌺", la
 selected = option_menu(
                         menu_title="☰ Iris Flower",
                         options=["Floral Welcome", "Floral Story", "Floral Data Dive", "Floral Entry Form"],
-                        icons=["🌺","📖","📊", "✒️"],
-                        menu_icon="triangular_flag_on_post",
+                        icons=["house-fill","book","bar-chart-fill", "card-list"],
+                        menu_icon="menu-up",
                         default_index=0,
                         orientation="horizontal"
                     )
