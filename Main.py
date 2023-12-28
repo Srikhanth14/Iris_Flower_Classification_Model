@@ -14,7 +14,7 @@ st.set_page_config(page_title="Iris Flower Classification", page_icon="🌸", la
 selected=option_menu(
               menu_title="Iris Flower",
               options=["Floral Welcome","Floral Story","Floral Data Dive","Floral Entry Form"],
-              icons=["house-fill","book","bar-chart-fill", "card-list"],
+              icons=["house-gear-fill","hourglass-split","database-down", "pencil-square"],
               menu_icon="list",
               default_index=0,
               orientation="horizontal"
