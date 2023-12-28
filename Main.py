@@ -17,7 +17,7 @@ with st.sidebar:
                 icons=["house-fill","book","bar-chart-fill", "card-list"],
                 menu_icon="list",
                 default_index=0,
-                orientation="horizontal"
+                #orientation="horizontal"
                 )
 
 if selected=="Floral Welcome":
