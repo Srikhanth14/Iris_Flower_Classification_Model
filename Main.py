@@ -16,7 +16,7 @@ selected=option_menu(
                     icons=["house-fill","book","bar-chart-fill", "card-list"],
                     menu_icon="menu-up",
                     default_index=0,
-                    orientation="horizontal"
+                    #orientation="horizontal"
                     )
 
 if selected=="Floral Welcome":
