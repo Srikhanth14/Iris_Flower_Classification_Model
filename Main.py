@@ -7,7 +7,7 @@ Created on Thu Dec 21 23:47:32 2023
 
 import streamlit as st
 from streamlit_option_menu import option_menu
-import floral_welcome, floral_story, floral_data_hub, floral_entry_form
+import floral_welcome,floral_story,floral_data_hub,floral_entry_form
 
 st.set_page_config(page_title="Iris Flower Classification", page_icon="flower", layout="wide")
 selected=option_menu(menu_title="Iris Flower",
