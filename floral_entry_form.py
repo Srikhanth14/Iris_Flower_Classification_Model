@@ -12,7 +12,7 @@ from PIL import Image
 
 def app():
     # Load the trained model
-    loaded_model = pickle.load(open(r'C:\Users\ELCOT\.spyder-py3\Model_Deployment\Iris\iris_trained_model.sav', 'rb'))
+    loaded_model = pickle.load(open('iris_trained_model.sav', 'rb'))
     
     # Function for making predictions
     def iris_flower_prediction(input_data):
