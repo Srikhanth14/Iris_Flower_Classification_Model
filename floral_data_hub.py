@@ -12,7 +12,7 @@ def dataset():
 
     # Data Source
     st.header("Data Source:")
-    st.write('''For more details, you can explore the dataset on Kaggle: [Link to Iris Dataset](link-to-iris-dataset)''')
+    st.write('''For more details, you can explore the dataset on Kaggle: [Click Here](https://www.kaggle.com/datasets/arshid/iris-flower-dataset)''')
 
     # Sample Data
     st.header("Sample Data:")
