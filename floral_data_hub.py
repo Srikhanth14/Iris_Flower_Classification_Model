@@ -6,33 +6,49 @@ Created on Thu Dec 21 23:57:01 2023
 import streamlit as st
 import pandas as pd
 def dataset():
-    st.markdown("# Iris Dataset Exploration")
-    st.markdown("Here dataset holds the secrets of Iris flowers, and we invite you to unravel the mysteries within.")
-    st.markdown("### Dataset Overview:")
-    st.markdown("🌸 **Source:** The Iris dataset is a gem sourced from nature, providing detailed information about the characteristics of Iris flowers.")
-    st.markdown("🎨 **Data Cleaning:** The dataset has been meticulously cleaned, ensuring accuracy and reliability in every petal's detail.")
-    st.markdown("📊 **Exploratory Data Analysis (EDA):** Embark on a visual journey through the dataset. Summaries and visualizations have been crafted to unveil the patterns within.")
-    st.markdown("### Sample Floral Insights:")
-    st.markdown("Here is a glimpse of the dataset, showcasing a few rows:")
-    
-    data=pd.read_csv("IRIS.csv")
-    st.dataframe(data)
-    
-    st.markdown("### Download Floral Knowledge:")
-    st.markdown("You can download the full Iris dataset for further exploration and to witness the diversity of Iris flowers:")
+    # Dataset Information
+    st.header("Dataset Information:")
+    st.write('''The predictive model is trained on a dataset containing information about Iris flowers, including features such as sepal length, sepal width, petal length, petal width, and species.''')
+
+    # Data Source
+    st.header("Data Source:")
+    st.write('''For more details, you can explore the dataset on Kaggle: [Link to Iris Dataset](link-to-iris-dataset)''')
+
+    # Sample Data
+    st.header("Sample Data:")
+    st.write("Here's a glimpse of the Iris dataset:")
+    data = pd.read_csv("IRIS.csv")  # Update with the actual file name
+    st.dataframe(data.head())
+     
+    # Display your sample data here
+    st.subheader("Download Dataset")
+    st.write("You can download the full Iris dataset for further exploration:")
+
     def data_read(data):
-        return data.to_csv().encode('utf-8')
-    
-    csv=data_read(data)
-    
+        return  data.to_csv().encode('utf-8')
+
+    csv = data_read(data)
+
     st.download_button(
-            label='Download Sample Data',
-            data=csv,
-            file_name='iris.csv',
-            mime='text/csv'
+        label='Download Sample Data',
+        data=csv,
+        file_name='iris.csv',
+        mime='text/csv'
     )
-    st.markdown("### Dig Deeper:")
-    st.markdown("Explore our GitHub repository for detailed information, project code, and additional insights into the world of Iris flowers.")
-    st.markdown("[GitHub Repository](https://github.com//Srikhanth14//CODSOFT//blob//main//Project_3_Iris_Flower_Classification.ipynb)")
-    st.markdown("Feel free to immerse yourself in the dataset, uncover patterns, and delve into the analysis conducted during the project.")
-    st.markdown("### Blossom with Knowledge! 🌼")
+
+    # Input Your Data
+    st.header("Input Your Data:")
+    st.write("Want predictions for your specific Iris flower details? Enter your data in the input form and discover the predicted Iris species.")
+
+    # Guidance on Data Format
+    st.header("Guidance on Data Format:")
+    st.write("To ensure successful predictions, enter your data with the same features as the sample data. Include columns for sepal length, sepal width, petal length, and petal width.")
+
+    # GitHub Link
+    st.header("GitHub Repository:")
+    st.write("Explore the code and details of this project on my GitHub repository:")
+    st.write("[Iris Flower Classification GitHub Repository](https://github.com/Srikhanth14/CODSOFT/blob/main/Project_3_Iris_Flower_Classification.ipynb)")
+
+    # Conclusion
+    st.write("Ready to predict the Iris species for your data? Input your flower details in the input form, and let the Iris Flower Classification app work its magic!")
+
