@@ -14,7 +14,7 @@ def iris_home():
     
    
     # Introduction
-    st.write("Welcome to the Blooming Iris Web App!")
+    st.header("Welcome to the Blooming Iris Web App!")
     st.write('''Immerse yourself in the enchanting world of Iris flowers. Predict the species and uncover the magic hidden in their petals.''')
 
     # Key Features
