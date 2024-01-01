@@ -9,7 +9,7 @@ from PIL import Image
 
 def iris_home():
     
-    image=Image.open('iris.jpeg')
+    image=Image.open('iris.jpg')
     st.image(image,use_column_width=True)
     
    
