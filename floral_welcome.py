@@ -12,23 +12,31 @@ def iris_home():
     image=Image.open('iris_flower.jpeg')
     st.image(image,use_column_width=True)
     
-    st.markdown("# Bloom with Iris Magic!")
-    st.markdown("Welcome to the Blooming Iris Web App! Predict the enchanting species of Iris flowers and uncover the secrets hidden in their petals.")
-    st.markdown("### Embrace the Floral Adventure:")
-    st.markdown("🌿 **Discover Iris Species:** Immerse yourself in the world of Iris flowers and predict their species with a touch of magic.")
-    st.markdown("🌈 **Petals of Possibilities:** Explore the characteristics of sepal and petal dimensions, and witness the power of predictive analytics.")
-    st.markdown("🌟 **Magical Predictions:** Use our easy-to-use sliders to input flower details and watch as the app unveils the mystical prediction of the Iris species.")
-    st.markdown("### What Awaits You:")
-    st.markdown("🔍 **Dataset Dive:** Delve into the Iris dataset, a treasure trove of floral insights. Uncover the unique traits that define each Iris species.")
-    st.markdown("📜 **Model Magic:** Learn about the spellbinding machine learning model that brings this floral adventure to life. Understand the wizardry behind the predictions.")
-    st.markdown("🌌 **Floral Symphony:** Each species has its own tune. Listen closely as the app reveals the Iris species, accompanied by beautiful visuals.")
-    st.markdown("### Ready to Bloom?")
-    
-    st.markdown("""🌸 **Navigate the Blooms:** Click through the petals of our web app.
-                    Explore the Input Form to make predictions, visit the About page to understand the magic, and gaze upon the dataset for floral revelations.""")
-    st.markdown("🎉 **Embark on the Floral Journey:** Ready to embark on a journey through the iris garden? Click, predict, and let the magic unfold!")
-    st.markdown("### Bloom with Us! 🌼")
-    
-    
-    
-    
+   
+    # Introduction
+    st.write("Welcome to the Blooming Iris Web App!")
+    st.write("Immerse yourself in the enchanting world of Iris flowers. Predict the species and uncover the magic hidden in their petals.")
+
+    # Key Features
+    st.subheader("Key Features:")
+    st.write("1. **Species Prediction:**
+    Explore the predictions of Iris flower species with the touch of magic. The model considers sepal and petal dimensions to reveal the floral secrets.")
+
+    st.write("2. **User-Friendly Interface:**
+    Navigate effortlessly through the app. Use our easy-to-use sliders to input flower details and witness the mystical predictions of Iris species.")
+
+    st.write("3. **Floral Insights:**
+    Delve into the characteristics of sepal and petal dimensions. Visualize the patterns and understand the unique traits defining each Iris species.")
+
+    # About the Project
+    st.subheader("About the Project:")
+    st.write("The Blooming Iris project combines the beauty of flowers with modern data science techniques. Join us in exploring the features that define each Iris species.")
+
+    # About Me
+    st.subheader("About Me:")
+    st.write("Curious about the mind behind the predictions? I'm [Your Name], a dedicated data scientist passionate about unraveling insights from nature.")
+    st.write("Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/srikhanth-r) or explore more projects on my [portfolio](datascienceportfol.io/srikhanth_r). Let's dive deep into the world of data science together!")
+
+    # Call to Action
+    st.write("Ready to explore the blooming Iris garden? Click through the petals of our web app. Explore the Input Form to make predictions and understand the magic behind each species.")
+
