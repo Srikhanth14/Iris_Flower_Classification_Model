@@ -11,7 +11,7 @@ import floral_welcome,floral_data_hub,Visualization,floral_entry_form
 
 st.set_page_config(page_title="Iris Flower Classification", page_icon="🌺", layout="wide")
 selected = option_menu(
-                        menu_title="☰ Iris Flower",
+                        menu_title="Iris Flower",
                         options=["Floral Welcome","Floral Data Dive", "Floral Insights","Floral Entry Form"],
                         icons=["house-gear-fill","database-down","pie-chart","pencil"],
                         menu_icon="flower1",
@@ -25,6 +25,6 @@ if selected == "Floral Welcome":
 if selected == "Floral Data Dive":
     floral_data_hub.dataset()
 if selected == "Floral Insights":
-    Visualization.dataset()
+    Visualization.iris_visualization()
 if selected == "Floral Entry Form":
     floral_entry_form.app()
