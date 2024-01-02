@@ -10,6 +10,14 @@ from streamlit_option_menu import option_menu
 import floral_welcome,floral_data_hub,Visualization,floral_entry_form
 
 st.set_page_config(page_title="Iris Flower Classification", page_icon="🌺", layout="wide")
+
+hide_st_style ="""<style>
+       #MainMenu{visibility:hidden;}
+       footer{visibility:hidden;}
+       header{visibility:hidden;}
+       </style> """
+st.markdown(hide_st_style,unsafe_allow_html=True)
+
 selected = option_menu(
                         menu_title="Iris Flower",
                         options=["Floral Welcome","Floral Data Dive", "Floral Insights","Floral Entry Form"],
